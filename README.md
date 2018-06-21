@@ -1,8 +1,3 @@
-# hello-world.
-just another code
-
-
-
 Notes on PHP :-
 
 1.INTRODUCTION:
@@ -199,4 +194,39 @@ echo $myArray{2};
 // prints "mi";
 They are equivalent to each other, and you can use whichever you like!
 
- 
+ 19. MODIFYING ARRAY VALUES:
+
+ To change an item in an array you have to define its position and replace it with a new value. 
+Take a look at the example:
+
+$myArray = array("red", "blue", "yellow");
+echo $myArray[1];
+// outputs "blue"
+$myArray[1] = "green";
+echo $myArray[1];
+// outputs "green"
+The program will recognize the new array called $myArray. It has a list of colors: red, blue and green. 
+The function echo will output the item at position 1. In this case, it will be blue. Remember that the array starts from the position 0 (red).
+After that, the blue color in position 1 will switch places with a new item called green.
+In the end, the echo function will output the new value at position 1. It will output green.
+
+20. DELETING ARRAY:
+
+You can use unset to remove an element from the array or even delete the whole array. 
+
+Let's examine the following code:
+
+$array = array("red", "blue", "green"); 
+unset($array[2]);
+
+21. LOOP:
+
+A loop is a block of code that will execute for a specified number of times. 
+
+Let's say that you want to output the parts of your spaceship! Well, you could write all of your code manually, like so:
+<?php
+    echo “part number:” . 10;
+    echo “part number:” . 15;
+    echo “part number:” . 20;
+    // And so on
+?>
