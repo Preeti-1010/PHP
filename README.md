@@ -1,4 +1,3 @@
-
 Notes on PHP :-
 
 1.INTRODUCTION:
