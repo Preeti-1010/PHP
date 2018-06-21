@@ -1,3 +1,4 @@
+
 Notes on PHP :-
 
 1.INTRODUCTION:
@@ -230,3 +231,111 @@ Let's say that you want to output the parts of your spaceship! Well, you could w
     echo “part number:” . 20;
     // And so on
 ?>
+
+22. FOR LOOP:
+
+for - a keyword that indicates where the loop syntax will start. 
+($i = 0; $i < 10; $i++) - instructions separated by semicolons(;), closed inside of a set of parentheses(()). 
+$i = 0. This will tell PHP where to start the loop. Here, the loop will start with $i at 0.
+ $i < 10. This will tell PHP where to end the loop. Here, the loop will run until $i is lower than 10.
+$i++. This will tell PHP what to do to repeat the loop. Here, every time the loop repeats it will add 1 to $i. $i++ is the same as $i = $i + 1.
+{ echo $i;} - a code inside curly braces({}) will run with every iteration of the loop. In the example, loop will output the current value of $i while $i < 10.
+
+23. Loops + Arrays = ForEach:
+
+This specific loop is exclusively useful when you know how many times you will need the loop to repeat. However, in some cases, you will need to use other loops that will help out in problematic situations.
+
+For example, you can use a new loop called foreach that will go over each element of the array. It will take all the elements of the array and run them separately through the code between curly braces({}). The loop will end with the last element of the array.
+To continue, follow the instructions in the task!
+
+Take a look at <ul> element it is a part of an html code. <ul> gives a bullet point to every value which is printed to the console.
+
+23. FOREACH SYNTAX:
+
+<?php
+  $numbers = array(1, 2, 3);
+  foreach($numbers as $item) {
+      echo $item;
+  }
+?>
+Here, the loop will print out all of the elements in the array.
+$numbers = array(1, 2, 3) will create a new array to use in the foreach loop.
+Foreach - a keyword that will start the loop.
+( $numbers as $item)  - a condition between the parentheses that will tell the PHP to take each value in $numbers array and assign those values temporarily to the $item. 
+$item - is a temporary variable that can have any name.
+{ echo $item;} - a code inside curly braces that will output each value in the $item variable. Here, it will print out 1, 2, and 3.
+
+24. WHILE LOOP:
+
+There will be situations when you will not know how many times the loop should repeat. In cases like this, you can use the while loop.
+
+A while loop will run without ending as long as the condition is true. 
+Check the code in the emulator! The while loop will simulate coin flips until the number of heads, in turn, is less than 3.
+
+25. INFINITE LOOP:
+
+An infinite loop is a sequence of instructions that will never end. If you do happen to write an infinite loop, refresh your page to stop it! 
+
+24: END WHILE:
+
+while(cond):
+  // looped statements go here
+endwhile;
+Here, the while loop does not use the curly braces({}) and instead uses the colon(:). The loop ends with endwhile;.
+
+Loops that use the endwhile syntax are more readable for the users that are embedding the PHP code with HTML. However, the syntax that uses curly braces is more readable within a PHP code block, like so:
+while(cond) {
+      // looped statements go here
+    }
+
+ 25: DO WHILE LOOP:
+
+ The while loop will check its condition before each iteration of the code inside.
+Do/while loop will check its condition after each iteration of the code inside.
+So it means that the do/while loop will execute the code at least once, while the while loop might not. 
+
+A perfect example of where you could use the do/while loop is doing a coin flip. 
+
+26. INTRO TO FUNCTION:
+
+Functions are a big part of PHP because they allow you to reuse pieces of code in your application. By doing so, you can save a lot of time and space in your program.
+PHP language has two types of functions:
+Built-in functions.
+Functions that you can create yourself.
+PHP has more than 1000 built-in library functions, so in most cases, you will only use them. 
+
+i) Strlen();
+
+For example - strlen(), an integrated string function in PHP that you can use to get a length of a string. Let's examine it:
+<?php
+  $length = strlen("Name");
+  echo $length;
+?>
+
+ii) Substr();
+
+Our mission will require another built-in PHP string function called substr(). You can use this function to return a part of a string.
+When you use the substr() function you have to pass it the name of the string - tell it where to start and when to end. 
+Take a look at the example:
+$myname = "Name";
+$partial = substr($myname, 0, 3);
+echo $partial;
+Here, the function will output three characters nam from the string $myname in the position 0, 1 and 2.
+
+iii) Strtoupper();
+
+Another two helpful integrated string functions are strtoupper() and strtolower(). The first function will make your whole string UPPERCASE and the second one will make your string lowercase.
+
+Examine the syntax of these functions:
+$uppercase = strtoupper($myname);
+echo $uppercase;
+
+iv) Lowercase();
+
+$lowercase = strtolower($uppercase);
+echo $lowercase;
+It is also possible to use these functions directly on a string, like so:
+echo strtolower("Name");
+
+
+
