@@ -1,17 +1,18 @@
-<!-- Create a simple HTML form and accept the user name and display the name through PHP echo statement. Go to the editor
--->
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HTML form</title>
+	<title>Form</title>
 </head>
 <body>
-		Name: <input type="text" name="name" style="width:300px">
-		<input type="Submit" value="Submit">
-		<?php
-			$username = $_POST['name'];
-			echo $username;
-		?>
+<h3>Form</h3>
+<form>
+	Name: <input type="text" name="username" placeholder="Enter a name">
+	<input type="submit" name="submit" value="submit">
+	<?php 
+		$username = $_POST['username'];
+
+		echo $username;
+	?>
+</form>
 </body>
 </html>
