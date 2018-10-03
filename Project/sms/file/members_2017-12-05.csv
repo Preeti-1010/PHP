@@ -1,0 +1,6 @@
+ID,Name,Email,Phone,Created,Status
+5,"Michael Jordan",michael@jordan.com,3456787656,"2017-08-17 18:44:44",Active
+4,"James Prinsep",james.prinsep@gmail.com,2345678987,"2017-08-17 08:23:23",Active
+3,"William Jones",william@jones.com,7654756437,"2017-08-14 12:42:40",Inactive
+2,"Merry Moe",merry.moe@gmail.com,0987654321,"2017-08-15 08:23:23",Active
+1,"John Doe",john.doe@gmail.com,1234567890,"2017-08-16 12:32:35",Inactive

@@ -1,0 +1,312 @@
+﻿@font-face{font-family: 'WebRupee';src: url('../fonts/WebRupee.V2.0.eot');src: local('WebRupee'), url('../fonts/WebRupee.V2.0.ttf') format('truetype'),  url('../fonts/WebRupee.V2.0.woff') format('woff'), url('../fonts/WebRupee.V2.0.svg') format('svg'), 
+url('(../fonts/BRLNSDB.ttf') format('truetype');font-weight: normal;font-style: normal;}
+.rupee {font-family: 'WebRupee';}
+
+.middleBg {
+	BACKGROUND: #f0f0f0
+}
+.paginator  {
+	text-align:center;
+	font-weight:normal;
+	float:right;
+	text-align:right;
+	color:#444444;
+	font-size:13px;
+	padding:10px 6px;
+	margin:10px 2px;
+}
+.paginator a{
+	color:#444444;
+	border: #DDDDDD 1px solid;
+	background:#FFFFFF none ;
+	margin:2px;
+	padding:2px 6px;
+	text-decoration:none;
+}
+.paginator a:hover {
+	background:#004EB0;
+	color:#FFF;
+	text-decoration:none;
+}
+.upperlinks {color:#000000;font-size:11px;font-family:arial;}
+.upperlinks a{color:#000000; text-decoration:none;}
+
+.innerlinks {color:#2c508a;font-size:13px; font-family:arial; text-decoration:none;}
+.innerlinks a{ color:#2c508a; text-decoration:none; }
+.innerlinks a:Hover{ color:#2c508a; text-decoration:underline;}
+
+.smalllinks {color:#000000;font-size:10px;font-family:verdana; text-decoration:none;}
+.smalllinks a{ color:#000000;font-size:10px;font-family:verdana; text-decoration:none; }
+.smalllinks a:Hover{ color: #2c508a; font-size:10px; text-decoration:underline;}
+
+.bottomlinks {color:#2C508A;font-size:13px;font-family:arial;FONT-WEIGHT: bold;}
+.bottomlinks a{ color:#2C508A; }
+.bottomlinks a:Hover{ color: #919191;font-size:15px; }
+
+.links {color:#454545;font-size:11px;font-family:arial;padding-left:5px;}
+.links a{ color:#2c508a; text-decoration:none;}
+
+.midlinks {color:#454545;font-size:11px;font-family:arial;padding-left:5px;font-weight:bold;}
+.midlinks a{ color:#454545; text-decoration:none;}
+
+.menulinks {color:#b50019;font-size:12px;font-family:arial;FONT-WEIGHT: bold;}
+.menulinks a{ color:#b50019;font-size:12px;font-family:arial;FONT-WEIGHT: bold; text-decoration:none }
+.menulinks a:Hover{ color: #b50019;font-size:12px; text-decoration:underline }
+
+.head {color:#2C508A;font-size:12px;font-family:arial;}
+.head a{color:#2C508A;text-decoration:none;}
+
+.mainhead {color:#2C508A;font-size:14px;font-family:arial;}
+.mainhead a{color:#2C508A;text-decoration:none;}
+
+.subhead2{color:#000000;font-size:12px;font-family:arial;font-weight:bold;}
+
+.subhead5{color:#000000;font-size:10px;font-family:verdana;arial;font-weight:bold;}
+H1{color:#0005C9;font-size:16px;font-family:arial;font-weight:bold;}
+
+.subhead{color:#ffffff;font-size:12px;font-family:arial; font-weight:bold}
+.subhead a{color:#ffffff;text-decoration:none;}
+.subhead a:Hover{ color:#ffffcc;text-decoration:underline;}
+
+.title {color:#4E91E3;font-size:16px;font-family:arial;font-weight:bold;}
+.title a{color:#4E91E3;text-decoration:none;}
+
+.text {color:black;font-size:12px;font-family:arial;line-height:17px;}
+.text a{color:black;text-decoration:none;}
+.text a:Hover{ color:#919191; text-decoration:underline; }
+
+.text1 {color:black;font-size:12px;font-family:arial;}
+.text1 a{color:black;}
+.text1 a:Hover{ color:#919191; }
+
+.b {color:navy;}
+.r {color:maroon;}
+
+.text2 {color:black;font-size:12px;font-family:arial;line-height:17px;padding-left:5px;}
+.text2 a{color:#324597;}
+.text2 a:Hover{ color:#000000; }
+.text2 B.main{color:#D78919; }
+
+.text-td {color:#444444;font-size:10px;font-family:arial; margin-left:5px;}
+.text-td b{color:#000000; font-size:10px;}
+
+.marqueetext {color:#023699;font-size:11px;font-family:arial;font-weight:bold;}
+.marqueetext a{color:#023699;text-decoration:none;}
+.marqueetext a:Hover{ color:#4F97EF;text-decoration:underline;}
+.marqueeheadtext {color:#023699;font-size:13px;font-family:arial;font-weight:bold;}
+.marqueeheadtext a{color:#023699;text-decoration:none;}
+.marqueeheadtext a:Hover{ color:#4F97EF;text-decoration:underline;}
+
+.adtext {color:#484848;font-size:12px;font-family:arial;padding-left:10px;padding-right:10px;line-height:17px;}
+.adtext b.wh{color:#1247B3;font-size:13px;}
+.adtext a{color:#023699;text-decoration:none;}
+.adtext a:Hover{ color:#4F97EF;text-decoration:underline;}
+
+table.border{ border: 1px solid #f0f0f0;  }
+.thbg{
+	background-color: #79deff;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size:12px;
+	color:#71aa76;
+}
+.caption{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color:#000000;
+}
+.success{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold; 
+	color:#2c508a;
+	/*border:#C0C0C0 1px solid; */
+	/*background-color:#F4F4F4*/
+}
+.warn{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight:bold; 
+	color:#b50019;
+}
+.hide { display:none; }
+.menuhead {color:#ffffcc;font-size:12px;font-family:Verdana,arial; text-align:left; font-weight:bold; }
+.menuhead a{color:#ffffcc;text-decoration:none; }
+.menuhead a:hover{color:#ffffff;text-decoration:none; }
+.menusubhead {color:#71aa76;font-size:12px;font-family:arial;}
+.menusubhead a{color:#71aa76;text-decoration:none; }
+.menusubhead a:hover{color:#71aa76;text-decoration:underline; }
+.menusubhead1 {color:#ffffff;font-size:12px;font-family:arial;}
+.menusubhead1 a{color:#ffffff;text-decoration:none; }
+.menusubhead1 a:hover{color:#ffffcc;text-decoration:none;font-weight:bold; }
+.arrow{color:Green;font-size:10px;font-family:arial;}
+.menuline{color:#0d9476; width:100%; }
+.headbg{
+	background-color:#3ebcef;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size:12px;
+	color:#0d9476;
+}
+.button {font-family: Verdana, Arial, Helvetica, sans-serif; size:20px;
+	font-size:12px;
+	font-weight:bold; 
+	color:#ffffff;
+	border:none; background-color:#592379;  }
+.body{margin:0; background-color:#f4c5cd }
+.topA {
+	BACKGROUND:#f0f0f0
+}
+.topB {
+	BACKGROUND:#f0f0f0
+}
+.topC {
+	BACKGROUND:#f0f0f0
+}
+.topD {
+	BACKGROUND:#f0f0f0
+}
+.menuBg {
+	BACKGROUND: #3ebcef
+}
+.bottomA {
+	BACKGROUND:#f0f0f0
+}
+.bottomB {
+	BACKGROUND:#f0f0f0
+}
+.bottomC {
+	BACKGROUND:#f0f0f0
+}
+.bottomD {
+	BACKGROUND:#f0f0f0
+}
+.topA {
+	MARGIN: 0px 0px; HEIGHT: 1px
+}
+.bottomA {
+	MARGIN: 0px 0px; HEIGHT: 1px
+}
+.topB {
+	MARGIN: 0px 0px; HEIGHT: 1px
+}
+.bottomB {
+	MARGIN: 0px 0px; HEIGHT: 1px
+}
+.topC {
+	MARGIN: 0px 0px; HEIGHT: 1px
+}
+.bottomC {
+	MARGIN: 0px 0px; HEIGHT: 1px
+}
+.topD {
+	MARGIN: 0px 0px; HEIGHT: 2px
+}
+.bottomD {
+	MARGIN: 0px 0px; HEIGHT: 2px
+}
+.topA {
+	DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden
+}
+.topB {
+	DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden
+}
+.topC {
+	DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden
+}
+.topD {
+	DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden
+}
+.bottomA {
+	DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden
+}
+.bottomB {
+	DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden
+}
+.bottomC {
+	DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden
+}
+.bottomD {
+	DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden
+}
+.textbox{BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; BORDER-LEFT: 1px solid; COLOR: black; BORDER-BOTTOM: 1px solid; TEXT-ALIGN: left; height:16;   }
+.altrowbg{background-color:#79d5ff;}
+.rowbg{background-color:#ffffff;}
+.curvecbg{ background-color:#f0f0f0; font-size:1 px;}
+
+.topA1 {
+		background-color:#f4c5cd; MARGIN: 0px 5px; HEIGHT: 1px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;}
+.topB1 {
+	background-color:#f4c5cd; MARGIN: 0px 3px; HEIGHT: 1px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+}
+.topC1 {
+	background-color:#f4c5cd; MARGIN: 0px 2px; HEIGHT: 1px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+}
+.topD1 {
+	background-color:#f4c5cd; MARGIN: 0px 1px; HEIGHT: 2px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+}
+.bottomA1 {
+	background-color:#f4c5cd; MARGIN: 0px 5px; HEIGHT: 1px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+	}
+.bottomB1 {
+	background-color:#f4c5cd; MARGIN: 0px 3px; HEIGHT: 1px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+}
+.bottomC1 {
+	background-color:#f4c5cd; MARGIN: 0px 2px; HEIGHT: 1px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+}
+.bottomD1 {
+	background-color:#f4c5cd; MARGIN: 0px 1px; HEIGHT: 2px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+}
+
+.topA1B {
+		background-color:#ffffff; MARGIN: 0px 5px; HEIGHT: 1px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;}
+.topB1B {
+	background-color:#ffffff; MARGIN: 0px 3px; HEIGHT: 1px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+}
+.topC1B {
+	background-color:#ffffff; MARGIN: 0px 2px; HEIGHT: 1px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+}
+.topD1B {
+	background-color:#ffffff; MARGIN: 0px 1px; HEIGHT: 2px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+}
+.bottomA1B {
+	background-color:#ffffff; MARGIN: 0px 5px; HEIGHT: 1px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+	}
+.bottomB1B {
+	background-color:#ffffff; MARGIN: 0px 3px; HEIGHT: 1px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+}
+.bottomC1B {
+	background-color:#ffffff; MARGIN: 0px 2px; HEIGHT: 1px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+}
+.bottomD1B {
+	background-color:#ffffff; MARGIN: 0px 1px; HEIGHT: 2px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+}
+
+.topA1C {
+		background-color:#3ebcef; MARGIN: 0px 5px; HEIGHT: 1px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;}
+.topB1C {
+	background-color:#3ebcef; MARGIN: 0px 3px; HEIGHT: 1px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+}
+.topC1C {
+	background-color:#3ebcef; MARGIN: 0px 2px; HEIGHT: 1px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+}
+.topD1C {
+	background-color:#3ebcef; MARGIN: 0px 1px; HEIGHT: 2px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+}
+.bottomA1C {
+	background-color:#3ebcef; MARGIN: 0px 5px; HEIGHT: 1px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+	}
+.bottomB1C {
+	background-color:#3ebcef; MARGIN: 0px 3px; HEIGHT: 1px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+}
+.bottomC1C {
+	background-color:#3ebcef; MARGIN: 0px 2px; HEIGHT: 1px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+}
+.bottomD1C {
+	background-color:#3ebcef; MARGIN: 0px 1px; HEIGHT: 2px; DISPLAY: block; FONT-SIZE: 1px; OVERFLOW: hidden;
+}
+

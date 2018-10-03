@@ -1,0 +1,284 @@
+<!--Last Updated 04102011 for counting of sender and Signature
+function updateTextBoxCounter() {
+   var unicodeFlag = 0;
+   var extraChars = 0;
+   var msgCount = 0;
+
+   for (var i = 0; (!unicodeFlag && (i < document.myform.message.value.length)); i++) {
+      if ((document.myform.message.value.charAt(i) >= '0') && (document.myform.message.value.charAt(i) <= '9')) {
+      }
+      else if ((document.myform.message.value.charAt(i) >= 'A') && (document.myform.message.value.charAt(i) <= 'Z')) {
+      }
+      else if ((document.myform.message.value.charAt(i) >= 'a') && (document.myform.message.value.charAt(i) <= 'z')) {
+      }
+      else if (document.myform.message.value.charAt(i) == '@') {
+      }
+      else if (document.myform.message.value.charAt(i) == '£') {
+      }
+      else if (document.myform.message.value.charAt(i) == '$') {
+      }
+      else if (document.myform.message.value.charAt(i) == '¥') {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xE8) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xE9) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xF9) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xEC) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xF2) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xC7) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x0D) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x0A) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xD8) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xF8) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xC5) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xE5) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x394) {
+      }
+      else if (document.myform.message.value.charAt(i) == '_') {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x3A6) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x393) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x39B) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x3A9) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x3A0) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x3A8) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x3A3) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x398) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x39E) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xC6) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xE6) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xDF) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xC9) {
+      }
+      else if (document.myform.message.value.charAt(i) == ' ') {
+      }
+      else if (document.myform.message.value.charAt(i) == '!') {
+      }
+      else if (document.myform.message.value.charAt(i) == '\"') {
+      }
+      else if (document.myform.message.value.charAt(i) == '#') {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xA4) {
+      }
+      else if (document.myform.message.value.charAt(i) == '%') {
+      }
+      else if (document.myform.message.value.charAt(i) == '&') {
+      }
+      else if (document.myform.message.value.charAt(i) == '\'') {
+      }
+      else if (document.myform.message.value.charAt(i) == '(') {
+      }
+      else if (document.myform.message.value.charAt(i) == ')') {
+      }
+      else if (document.myform.message.value.charAt(i) == '*') {
+      }
+      else if (document.myform.message.value.charAt(i) == '+') {
+      }
+      else if (document.myform.message.value.charAt(i) == ',') {
+      }
+      else if (document.myform.message.value.charAt(i) == '-') {
+      }
+      else if (document.myform.message.value.charAt(i) == '.') {
+      }
+      else if (document.myform.message.value.charAt(i) == '/') {
+      }
+      else if (document.myform.message.value.charAt(i) == ':') {
+      }
+      else if (document.myform.message.value.charAt(i) == ';') {
+      }
+      else if (document.myform.message.value.charAt(i) == '<') {
+      }
+      else if (document.myform.message.value.charAt(i) == '=') {
+      }
+      else if (document.myform.message.value.charAt(i) == '>') {
+      }
+      else if (document.myform.message.value.charAt(i) == '?') {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xA1) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xC4) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xD6) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xD1) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xDC) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xA7) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xBF) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xE4) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xF6) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xF1) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xFC) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0xE0) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x391) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x392) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x395) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x396) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x397) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x399) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x39A) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x39C) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x39D) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x39F) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x3A1) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x3A4) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x3A5) {
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x3A7) {
+      }
+      else if (document.myform.message.value.charAt(i) == '^') {
+         extraChars++;
+      }
+      else if (document.myform.message.value.charAt(i) == '{') {
+         extraChars++;
+      }
+      else if (document.myform.message.value.charAt(i) == '}') {
+         extraChars++;
+      }
+      else if (document.myform.message.value.charAt(i) == '\\') {
+         extraChars++;
+      }
+      else if (document.myform.message.value.charAt(i) == '[') {
+         extraChars++;
+      }
+      else if (document.myform.message.value.charAt(i) == '~') {
+         extraChars++;
+      }
+      else if (document.myform.message.value.charAt(i) == ']') {
+         extraChars++;
+      }
+      else if (document.myform.message.value.charAt(i) == '|') {
+         extraChars++;
+      }
+      else if (document.myform.message.value.charCodeAt(i) == 0x20AC) {
+         extraChars++;
+		// alert(document.myform.message.value.charCodeAt(i));
+      }
+      else {
+		//alert("Unicode");
+		unicodeFlag = 1;
+      }
+   }
+	sigCount=0;
+	//alert(document.getElementById("chkSig").checked);
+	if(document.getElementById("chkSig").checked==true) {
+		sigCount = document.myform.sig.value.length;
+	} else {
+		sigCount=0;
+	}
+	if(document.getElementById("chkSender").checked==true) {
+		senderCount = document.myform.ddlsender.value.length + 1;
+	} else {
+		senderCount=0;
+	}
+	msgCount=0;
+   if (unicodeFlag) {
+	  msgCount = document.myform.message.value.length;
+	  msgCount = msgCount + sigCount + senderCount;
+      if (msgCount <= 70) {
+         msgCount = 1;
+		 document.getElementById("chars").innerHTML = "" + (document.myform.message.value.length + sigCount + senderCount) + " <strong>unicode</strong> characters.";
+      document.getElementById("credits").innerHTML = "<strong>" + msgCount + " SMS Credit(s)</strong>";
+      }
+      else {
+         msgCount += (67-1);
+         msgCount -= (msgCount % 67);
+         msgCount /= 67;
+		 document.getElementById("chars").innerHTML = "" + (document.myform.message.value.length + sigCount + senderCount) + " <strong>unicode</strong> characters.";
+      document.getElementById("credits").innerHTML = "<strong>" + msgCount + " SMS Credit(s)</strong>";
+	  	if(document.myform.longsms.checked==false)
+		{
+		  alert("This is Long SMS, to send please check the box *Allow Long SMS*.\nNote: SMS Credit(s) would be deducted in multiples of " + msgCount + " for this SMS");
+		  return false;
+		}
+      }
+      //document.myform.unicode.value = "1";
+		if(document.myform.unicodesms.checked==false)
+		{
+		  alert("Unicode characters not allowed.To Allow the Unicode characters please check the box.");
+		  return false;
+		}
+   } 
+   else {
+      msgCount = document.myform.message.value.length + extraChars;
+	  msgCount = msgCount + sigCount + senderCount;
+      if (msgCount <= 160) {
+         msgCount = 1;
+		 document.getElementById("chars").innerHTML = "" + (document.myform.message.value.length + extraChars + sigCount + senderCount) + " characters.";
+      	document.getElementById("credits").innerHTML = "" + msgCount + " SMS Credit(ss)";
+      }
+      else {
+         msgCount += (153-1);
+         msgCount -= (msgCount % 153);
+         msgCount /= 153;
+		 document.getElementById("chars").innerHTML = "" + (document.myform.message.value.length + extraChars + sigCount + senderCount) + " characters.";
+      document.getElementById("credits").innerHTML = "" + msgCount + " SMS Credit(sss)";
+		 if(document.myform.longsms.checked==false)
+		{
+		  alert("This is Long SMS, to send please check the box *Allow Long SMS*.\nNote: SMS Credit(s) would be deducted in multiples of " + msgCount + " for this SMS");
+		  return false;
+		}
+      }
+      //document.myform.unicode.value = "0";
+   }
+  document.getElementById("hcredits").value=msgCount;
+}
+
+
+function count()
+{
+	var numtext = document.myform.message.value.length;
+	var numchars = numtext;
+	var numunits = 0;
+	var i = 0;
+	while (i < numchars)
+	{
+		numunits += 1;
+		i += 160;
+	}
+	document.getElementById("chars").innerHTML = numchars;
+	document.getElementById("units").innerHTML = numunits;
+}
