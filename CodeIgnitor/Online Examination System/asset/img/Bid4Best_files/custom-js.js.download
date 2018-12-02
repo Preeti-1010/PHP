@@ -1,0 +1,29 @@
+
+
+$(document).ready(function(){
+	var a = $(".m-banner").height();
+$(".cont").height(a+42);
+});
+
+$(document).ready(function(){
+  $('#animatedHeading').slick({
+		autoplay: false,
+		arrows: true,
+		dots: false,
+		slidesToShow: 3,
+		centerPadding: "10px",
+		draggable: true,
+		infinite: true,
+		pauseOnHover: false,
+		swipe: false,
+		touchMove: false,
+		vertical: true,
+		speed: 1000,
+		autoplaySpeed: 2000,
+		useTransform: true,
+		cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1.000)',
+		adaptiveHeight: true,
+		
+  });
+});
+

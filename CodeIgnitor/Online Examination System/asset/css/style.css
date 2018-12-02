@@ -1,0 +1,37 @@
+
+#search{
+	 background-image: linear-gradient(to top, #000 2px, rgba(255, 255, 255, 0) 2px), linear-gradient(to top, #FFFFFF 1px, rgba(255, 255, 255, 0) 1px)!important;
+}
+.has-white .form-control:focus{
+  color: #000!important;
+}
+div.main-left {
+    float: left;
+    clear: none;
+}
+
+div.main-right {
+    float: right;
+    text-align: left;
+    clear: none;
+}
+
+h3.topic-heading {
+    font-weight: 700;
+    font-family: "Roboto Slab", "Times New Roman", serif;
+}
+
+ul {
+	list-style: none;
+    list-style-type: decimal;
+}
+
+.profile_img{
+    border-radius: 50%;
+    width: 27px;
+}
+.error-msg {
+    color: red;
+    font-weight: 400!important;
+}
+

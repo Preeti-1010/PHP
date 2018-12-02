@@ -1,0 +1,112 @@
+$(document).ready(function() { 
+	var url = (window.location.href);
+   $('#sidebar ul li a[href="'+url+'"]').parent().addClass('active1');       
+});
+/*seller profile image upload*/
+$(document).ready(function() { 	
+    $('#uploadprofile').on('change',function(event) {
+   var imgVal = $('#imgInp').val(); 
+   var fileExtension = imgVal.substr((imgVal.lastIndexOf('.') + 1));   
+    if(fileExtension == 'jpg' || fileExtension == 'jpeg' || fileExtension == 'png')
+	{		
+    var formObj = $(this);
+    var formURL = formObj.attr("action");
+    var formData = new FormData(this);
+   // alert(formData); return false;
+
+        // process the form
+       $.ajax({
+        url: formURL,
+        type: 'POST',
+        data:  formData,
+        mimeType:"multipart/form-data",
+        contentType: false,
+        cache: false,
+        processData:false,
+         beforeSend: function(){
+        $('#send22').html('<img src="../uploads/upload.gif">');        
+         },
+    success: function(data, textStatus, jqXHR)
+    {    	
+        document.getElementById("uploadprofile").reset();                
+        $('#send22').html('');
+        $('#send22').html('<div class="alert alert-success">Successfully uploaded.</div>');
+        setTimeout(function(){ 
+          $('#send22').html('');        
+        }, 2000); 
+       
+    },
+     error: function(jqXHR, textStatus, errorThrown) 
+     {
+$('#send22').html('Sorry cannot upload profile!');      
+
+     }          
+    });
+	}
+	else
+	{
+		alert("Please select only JPEG and PNG file.");
+	}
+        
+        event.preventDefault();
+    });
+
+});
+/*seller profile image upload*/
+/*Buyer profile image upload*/
+$(document).ready(function() { 
+    $('#buyerprofile').on('change',function(event) {
+   var imgVal = $('#imgInp').val(); 
+   var fileExtension = imgVal.substr((imgVal.lastIndexOf('.') + 1));   
+    if(fileExtension == 'jpg' || fileExtension == 'jpeg' || fileExtension == 'png')
+	{
+    var formObj = $(this);
+    var formURL = formObj.attr("action");
+    var formData = new FormData(this);
+    //alert("ss"); return false;
+
+        // process the form
+       $.ajax({
+        url: formURL,
+        type: 'POST',
+        data:  formData,
+        mimeType:"multipart/form-data",
+        contentType: false,
+        cache: false,
+        processData:false,
+         beforeSend: function(){
+        $('#send22').html('<img src="../uploads/upload.gif">');        
+         },
+    success: function(data, textStatus, jqXHR)
+    {    	
+        document.getElementById("buyerprofile").reset();                
+        $('#send22').html('');
+        $('#send22').html('<div class="alert alert-success">Successfully uploaded.</div>');
+        setTimeout(function(){ 
+          $('#send22').html('');        
+        }, 2000); 
+       
+    },
+     error: function(jqXHR, textStatus, errorThrown) 
+     {
+$('#send22').html('Sorry cannot upload profile!');      
+
+     }          
+    });
+	}
+	else
+	{
+		alert("Please select only JPEG and PNG file.");
+	}
+        
+        event.preventDefault();
+    });
+
+});
+/*Buyer profile image upload*/
+$(document).ready(function() { 
+	$.validator.addMethod("descvali", function(value, element) {
+	//return this.optional(element) || /^[a-zA-Z0-9\-\.\&\(\)\,\s]+$/.test(value);
+	return this.optional(element) || /^[\S\s]+$/.test(value);
+	}, "Please enter only alphnumeric.");
+});
