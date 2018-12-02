@@ -1,0 +1,6 @@
+td.quesover{
+    display: inline-block;
+    width: 635px;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
