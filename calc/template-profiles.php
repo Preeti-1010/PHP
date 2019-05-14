@@ -15,30 +15,29 @@ $users=ThemexUser::getUsers(array(
 	<?php if(!empty($users)) { ?>
  	<div class="profiles-listing clearfix">
 		<?php
-		$counter=0;
+		
 		foreach($users  as $key=> $user) {	
 			
 			ThemexUser::$data['active_user']=ThemexUser::getUser($user->ID);
-				$counter++;
+				
 				
 				$class = '';
-
-				if(($key % 3) == 2){
-					$class = 'profile_fade';?>
-				<?php }else{
-					$class = "column fourcol <?php if($counter==3) { ?>last<?php }?>";
+				if(user_logged_in()){
+					$class = "column fourcol";
+				} else if(($key >= 3){
+					$class = 'profile_fade';
+				 }else{
+					$class = "column fourcol";
+				if($key%3==2){
+					$class .= ' last';
+				}
 				}?>
 
 				<div class="<?php echo $class;?>">
 					
 				<?php get_template_part('content', 'profile-grid'); ?>
 				</div>
-			
-
-			<?php		
-			if($counter==3) {
-			$counter=0;
-			?>	
+				
 			
 			<div class="clear"></div>
 
