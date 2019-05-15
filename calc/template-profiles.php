@@ -15,38 +15,52 @@ $users=ThemexUser::getUsers(array(
 	<?php if(!empty($users)) { ?>
  	<div class="profiles-listing clearfix">
 		<?php
-		
+		$i = 0;
 		foreach($users  as $key=> $user) {	
 			
 			ThemexUser::$data['active_user']=ThemexUser::getUser($user->ID);
-				
-				
+				$i++;
 				$class = '';
-				if(user_logged_in()){
+
+				if(is_user_logged_in()){
 					$class = "column fourcol";
-				} else if(($key >= 3){
-					$class = 'profile_fade';
-				 }else{
+					if($key%3==2){
+						$class .= " last";
+					}
+				 } else{
 					$class = "column fourcol";
-				if($key%3==2){
-					$class .= ' last';
-				}
-				}?>
+					if($key%3==2){
+						$class .= " last";
+					}
+				} ?>
+
 
 				<div class="<?php echo $class;?>">
+				<?php if(!is_user_logged_in() && $key >= 3){?>
+				<div class="profile_fade">
 					
-				<?php get_template_part('content', 'profile-grid'); ?>
+				</div>
+				<?php }?>
+					
+					<?php get_template_part('content', 'profile-grid'); ?>
+				
 				</div>
 				
+				<?php		
+					if($i==3) {
+					$i=0;
+				?>	
 			
 			<div class="clear"></div>
 
-			<?php }}
-		?>
+			<?php }
+		} ?>
 
 	</div>
 	<!-- /profiles -->
-	<?php ThemexInterface::renderPagination(themex_paged(), themex_pages(ThemexUser::getUsers(array('fields' => 'ID')), ThemexCore::getOption('user_per_page', 9))); ?>
+	<?php if(is_user_logged_in()){ ?> 
+	<?php ThemexInterface::renderPagination(themex_paged(), themex_pages(ThemexUser::getUsers(array('fields' => 'ID')), ThemexCore::getOption('user_per_page', 9))); 
+	}	?>
 	<?php } else { ?>
 		
 	<h3><?php _e('No profiles found. Try a different search?','lovestory'); ?></h3>
